@@ -1,0 +1,13 @@
+[submodule "vendor/packer-windows"]
+	path = vendor/packer-windows
+	url = https://github.com/protomouse/packer-windows.git
+	branch = variables
+[submodule "machines/coreos"]
+	path = machines/coreos
+	url = https://github.com/coreos/coreos-vagrant.git
+[submodule "machines/deis"]
+	path = machines/deis
+	url = https://github.com/deis/deis.git
+[submodule "vendor/osx-vm-templates"]
+	path = vendor/osx-vm-templates
+	url = https://github.com/timsutton/osx-vm-templates.git

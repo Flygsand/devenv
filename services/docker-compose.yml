@@ -1,0 +1,23 @@
+mysql_data:
+  container_name: mysql_data
+  build: mysql_data
+
+mysql:
+  image: mysql
+  ports:
+    - "3306:3306"
+  volumes_from: 
+    - mysql_data
+  environment:
+    MYSQL_ROOT_PASSWORD: "deadbeef"
+
+redis_data:
+  container_name: redis_data
+  build: redis_data
+
+redis:
+  image: redis
+  ports:
+    - "6379:6379"
+  volumes_from:
+    - redis_data
